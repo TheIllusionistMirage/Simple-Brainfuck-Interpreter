@@ -12,7 +12,7 @@ impossible to me.
 
 Also, two brainfuck  project  files  called  'TowersOfHanoi.bf'
 [ Clifford Wolf(http://www.clifford.at/bfcpu/hanoi.html) ] and
-'HelloWorld.bf'[ htpp://en.wikipedia.org/wiki/Brainfuck ] have
+'HelloWorld.bf'[ http://en.wikipedia.org/wiki/Brainfuck ] have
 been provided here for testing.
 
 Please feel free to use this anywhere :)
