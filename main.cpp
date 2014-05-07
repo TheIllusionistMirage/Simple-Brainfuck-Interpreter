@@ -16,8 +16,9 @@
 
 #include "Interpreter.hpp"
 
-int main(int argc, char *argv[])
+int main()
 {
+    std::cout << "Enter the brainfuck source file that you want to interpret : ";
     std::string bf_srcFile;
     std::cin >> bf_srcFile;
 
