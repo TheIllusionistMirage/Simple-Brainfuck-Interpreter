@@ -101,12 +101,7 @@ void bfck::Interpreter::execute()
 
             case '.':
                 {
-                    if((*_dataCell_ptr) == 10)
-                        std::cout << "\n";
-                    else if((*_dataCell_ptr) == 13)
-                        std::cout << "\r";
-                    else
-                        std::cout << (char)(*_dataCell_ptr);
+                    std::cout << (char)(*_dataCell_ptr);
                 } break;
 
             case ',':
