@@ -10,13 +10,8 @@
 
 bfck::Interpreter::Interpreter(const std::string &fileName) : _srcFileName(fileName)
 {
-    try{
-        _dataCell.resize(30000, 0);
-        _dataCell_ptr = _dataCell.begin();
-    }
-    catch(std::runtime_error &e){
-        std::cout << e.what() << std::endl;
-    }
+    _dataCell.resize(30000, 0);
+    _dataCell_ptr = _dataCell.begin();
     open(_srcFileName);
 }
 

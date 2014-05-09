@@ -22,10 +22,14 @@ int main()
     std::string bf_srcFile;
     std::cin >> bf_srcFile;
 
-    bfck::Interpreter simple_brainfuck_interpreter(bf_srcFile);
-    simple_brainfuck_interpreter.parse();
-    simple_brainfuck_interpreter.checkForErrors();
-    simple_brainfuck_interpreter.execute();
+    try{
+        bfck::Interpreter simple_brainfuck_interpreter(bf_srcFile);
+        simple_brainfuck_interpreter.parse();
+        simple_brainfuck_interpreter.checkForErrors();
+        simple_brainfuck_interpreter.execute();
+    } catch(std::exception &e){
+        std::cout << e.what() << std::endl;
+    }
 
     return 0;
 }
