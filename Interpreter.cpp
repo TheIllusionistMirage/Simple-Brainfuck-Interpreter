@@ -96,7 +96,7 @@ void bfck::Interpreter::execute()
 
             case '-':
                 {
-                    if((*_dataCell_ptr) > 0)(*_dataCell_ptr)--;
+                    (*_dataCell_ptr)--;
                 } break;
 
             case '.':
